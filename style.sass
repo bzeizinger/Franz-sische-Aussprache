@@ -1,0 +1,161 @@
+@font-face
+    font-family: "SourGummy"
+    src: url("/assets/fonts/SourGummy-VariableFont_wdth,wght.ttf")
+
+@font-face
+    font-family: "SourGummyItalic"
+    src: url("/assets/fonts/SourGummy-Italic-VariableFont_wdth,wght.ttf")
+
+$bg: #fafafa
+$bg_dark: #101010
+$main: #101010
+$redi: #ff5050
+$green: #bbffbb
+$blui: #5050ff
+
+body
+    padding: 0
+    margin: 0
+    background-color: $bg
+    color: $main
+    font-family: "SourGummy"
+    font-size: 25px
+    overflow-x: hidden
+    overflow-y: hidden
+    user-select: none
+
+a
+    color: $main
+    text-decoration: none
+    font-family: "SourGummyItalic"
+    font-size: 18px
+
+.page0
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    top: 0
+    left: 0
+    margin: 0
+    padding: 1rem
+    height: 100vh
+    width: 100vw
+
+    & .title
+        font-size: 125px
+
+    & .french_title
+        font-size: 50px
+        font-family: "SourGummyItalic"
+
+    & .r
+        color: $redi
+
+    & .b
+        color: $blui
+
+    & button
+        font-size: 75px
+        font-family: SourGummy
+        background-color: $main
+        color: $bg
+        border: none
+        cursor: pointer
+        padding: 15px
+        margin: 12.5px
+        margin-top: 50px
+        border-radius: 25px
+
+.page1 .page2
+    display: none
+
+.mainPage
+    flex-direction: column
+
+.header
+    top: 0
+    width: 100vw
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-direction: row
+    height: 100px
+    border-bottom: 5px solid $bg_dark
+
+    & .three
+        width: 33%
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 75px
+
+    & .three img
+        height: 75px
+
+    & .three button
+        border: none
+        background: none
+        font-family: SourGummy
+        cursor: pointer
+        font-size: 75px
+
+main
+    display: flex
+    justify-content: center
+    align-items: center
+    // Changed from invalid declaration to valid one:
+    flex-direction: column
+    height: calc(100vh - 100px)
+
+    .lr
+        height: calc(100% - 200px)
+        display: flex
+        justify-content: center
+        align-items: stretch
+        flex-direction: row
+        width: 100%
+
+    .german
+        border-right: 2.5px solid $bg_dark
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        flex-direction: column
+        font-size: 37.5px
+
+    .french
+        border-left: 2.5px solid $bg_dark
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        flex-direction: column
+        font-size: 37.5px
+
+    .part
+        height: 100%
+        width: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        flex-direction: column
+        font-size: 37.5px
+        padding: 20px
+        min-height: 100%
+        box-sizing: border-box
+        word-wrap: break-word
+        max-width: 50%
+
+    .robot
+        height: 200px
+        background-color: $blui
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        font-size: 37.5px
+        border-top: 5px solid $bg_dark

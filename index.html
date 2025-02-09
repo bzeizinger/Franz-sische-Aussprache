@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Französische Aussprache</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="/assets/img/favicon.ico" />
+  </head>
+  <body>
+    <div class="page0" id="page0">
+      <span class="title">Aussprache</span>
+      <span class="french_title">Prononciation</span>
+      <button onclick="turn1()">
+        <span class="b w">L</span>
+        <span>O</span>
+        <span class="r w">S</span>
+      </button>
+    </div>
+
+    <div class="page1 mainPage" id="page1">
+      <div class="header">
+        <div class="three">
+          <img src="/assets/img/favicon.ico" alt="" />
+        </div>
+        <div class="three">
+          <button onclick="turnHome()">Aussprache</button>
+        </div>
+        <div class="three">
+          <button onclick="turnHome()"><-</button>
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+          <button onclick="turn2()">-></button>
+        </div>
+      </div>
+
+      <main>
+        <div class="lr">
+          <div class="german part">Ich heiße Leo, und du</div>
+          <div class="french part">Je m'appelle Léo, et toi?</div>
+        </div>
+        <div class="robot">
+          <p>
+            Wie du schon gehört hast sind das Leo und Léo. Sie werden dir heute
+            die <span style="color: #ff5050">französische</span> Aussprache
+            breibringen!
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <div class="page2 mainPage" id="page2">
+      <div class="header">
+        <div class="three">
+          <img src="/assets/img/favicon.ico" alt="" />
+        </div>
+        <div class="three">
+          <button onclick="turnHome()">Aussprache</button>
+        </div>
+        <div class="three">
+          <button onclick="turn1()"><-</button>
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+          <button>-></button>
+        </div>
+      </div>
+
+      <main>
+        <div class="lr">
+          <div class="german part">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            aliquam velit amet dolorum totam et temporibus consequatur optio vel
+            doloremque reprehenderit nihil est in adipisci labore, non inventore
+            atque culpa!
+          </div>
+          <div class="french part">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            aliquam velit amet dolorum totam et temporibus consequatur optio vel
+            doloremque reprehenderit nihil est in adipisci labore, non inventore
+            atque culpa!
+          </div>
+        </div>
+        <div class="robot">
+          <p>
+            Wie du schon gehört hast sind das Leo und Léo. Sie werden dir heute
+            die französisch Aussprache breibringen!
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
