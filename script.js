@@ -28,20 +28,31 @@ const german10 = new Audio("/assets/audio/german/10.mp3");
 const german11 = new Audio("/assets/audio/german/11.mp3");
 
 const end = new Audio("/assets/audio/end.mp3");
-
 const silence = new Audio("/assets/audio/nothing.mp3");
 
 const page0 = document.getElementById("page0");
 const page1 = document.getElementById("page1");
 const page2 = document.getElementById("page2");
 
+function playSequentially(audios) {
+  if (audios.length === 0) return;
+  let index = 0;
+  function playNext() {
+    if (index < audios.length) {
+      audios[index].play();
+      audios[index].onended = () => {
+        index++;
+        playNext();
+      };
+    }
+  }
+  playNext();
+}
+
 function turn1() {
   page0.style.display = "none";
   page1.style.display = "flex";
-  page2.style.display = "none";
-  silence.play();
-  robot1.play();
-  silence.play();
+  playSequentially([robot1, silence, german1, silence, french1]);
 }
 
 function turnHome() {
@@ -53,5 +64,5 @@ function turnHome() {
 function turn2() {
   page1.style.display = "none";
   page2.style.display = "flex";
-  robot2.play();
+  playSequentially([robot2, silence, french2, silence, german2]);
 }
