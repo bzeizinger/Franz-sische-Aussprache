@@ -9,6 +9,8 @@
     <link rel="icon" href="/assets/img/favicon.ico" />
   </head>
   <body>
+    <canvas class="can" id="can"></canvas>
+
     <div class="page0" id="page0">
       <span class="title">Aussprache</span>
       <span class="french_title">Prononciation</span>
@@ -35,17 +37,16 @@
       <main>
         <div class="lr">
           <div class="german part">
-            <img src="/assets/img/german/1.png" alt="">
+            <img src="/assets/img/german/1.png" alt="" />
           </div>
           <div class="french part">
-            <img src="/assets/img/french/1.png" alt="">
+            <img src="/assets/img/french/1.png" alt="" />
           </div>
         </div>
         <div class="robot">
           <p>
             Wie du schon gehört hast sind das Leo und Léo. Sie werden dir heute
-            die <span style="color: #ff5050">französische</span> Aussprache
-            breibringen!
+            die französische Aussprache breibringen!
           </p>
         </div>
       </main>
@@ -60,25 +61,291 @@
           <button onclick="turnHome()">Aussprache</button>
         </div>
         <div class="three">
-          <button>-></button>
+          <button onclick="turn3()">-></button>
         </div>
       </div>
 
       <main>
         <div class="lr">
           <div class="german part">
+            <img src="/assets/img/german/2.png" alt="" />
           </div>
           <div class="french part">
+            <img src="/assets/img/french/2.png" alt="" />
           </div>
         </div>
         <div class="robot">
-          <p>
-            Vokale
-          </p>
+          <p>Kommen wir nun zu den Vokalen. Achte auf die Betonung!</p>
         </div>
       </main>
     </div>
 
+    <div class="page3 mainPage" id="page3">
+      <div class="header">
+        <div class="three">
+          <img src="/assets/img/favicon.ico" alt="" />
+        </div>
+        <div class="three">
+          <button onclick="turnHome()">Aussprache</button>
+        </div>
+        <div class="three">
+          <button onclick="turn4()">-></button>
+        </div>
+      </div>
+
+      <main>
+        <div class="lr">
+          <div class="german part">
+            <img src="/assets/img/german/3.png" alt="" />
+          </div>
+          <div class="french part">
+            <img src="/assets/img/french/3.png" alt="" />
+          </div>
+        </div>
+        <div class="robot">
+          <p>Kommen wir nun zu den Vokalen. Achte auf die Betonung!</p>
+        </div>
+      </main>
+    </div>
+
+    <div class="page4 mainPage" id="page4">
+      <div class="header">
+        <div class="three">
+          <img src="/assets/img/favicon.ico" alt="" />
+        </div>
+        <div class="three">
+          <button onclick="turnHome()">Aussprache</button>
+        </div>
+        <div class="three">
+          <button onclick="turn5()">-></button>
+        </div>
+      </div>
+
+      <main>
+        <div class="lr">
+          <div class="german part">
+            <img src="/assets/img/german/4.png" alt="" />
+          </div>
+          <div class="french part">
+            <img src="/assets/img/french/4.png" alt="" />
+          </div>
+        </div>
+        <div class="robot">
+          <p>Kommen wir nun zu den Vokalen. Achte auf die Betonung!</p>
+        </div>
+      </main>
+    </div>
+
+    <div class="page5 mainPage" id="page5">
+      <div class="header">
+        <div class="three">
+          <img src="/assets/img/favicon.ico" alt="" />
+        </div>
+        <div class="three">
+          <button onclick="turnHome()">Aussprache</button>
+        </div>
+        <div class="three">
+          <button onclick="turn6()">-></button>
+        </div>
+      </div>
+
+      <main>
+        <div class="lr">
+          <div class="german part">
+            <img src="/assets/img/german/5.png" alt="" />
+          </div>
+          <div class="french part">
+            <img src="/assets/img/french/5.png" alt="" />
+          </div>
+        </div>
+        <div class="robot">
+          <p>Kommen wir nun zu den Vokalen. Achte auf die Betonung!</p>
+        </div>
+      </main>
+    </div>
+
+    <div class="page6 mainPage" id="page6">
+      <div class="header">
+        <div class="three">
+          <img src="/assets/img/favicon.ico" alt="" />
+        </div>
+        <div class="three">
+          <button onclick="turnHome()">Aussprache</button>
+        </div>
+        <div class="three">
+          <button onclick="turn7()">-></button>
+        </div>
+      </div>
+
+      <main>
+        <div class="lr">
+          <div class="german part">
+            <img src="/assets/img/german/6.png" alt="" />
+          </div>
+          <div class="french part">
+            <img src="/assets/img/french/6.png" alt="" />
+          </div>
+        </div>
+        <div class="robot">
+          <p>Kommen wir nun zu den Vokalen. Achte auf die Betonung!</p>
+        </div>
+      </main>
+    </div>
+
+    <div class="page7 mainPage" id="page7">
+      <div class="header">
+        <div class="three">
+          <img src="/assets/img/favicon.ico" alt="" />
+        </div>
+        <div class="three">
+          <button onclick="turnHome()">Aussprache</button>
+        </div>
+        <div class="three">
+          <button onclick="turn8()">-></button>
+        </div>
+      </div>
+
+      <main>
+        <div class="lr">
+          <div class="german part">
+            <img src="/assets/img/german/7.png" alt="" />
+          </div>
+          <div class="french part">
+            <img src="/assets/img/french/7.png" alt="" />
+          </div>
+        </div>
+        <div class="robot">
+          <p>Kommen wir nun zu den Konsonanten. Achte auf die Merkmale!</p>
+        </div>
+      </main>
+    </div>
+
+    <div class="page8 mainPage" id="page8">
+      <div class="header">
+        <div class="three">
+          <img src="/assets/img/favicon.ico" alt="" />
+        </div>
+        <div class="three">
+          <button onclick="turnHome()">Aussprache</button>
+        </div>
+        <div class="three">
+          <button onclick="turn9()">-></button>
+        </div>
+      </div>
+
+      <main>
+        <div class="lr">
+          <div class="german part">
+            <img src="/assets/img/german/8.png" alt="" />
+          </div>
+          <div class="french part">
+            <img src="/assets/img/french/8.png" alt="" />
+          </div>
+        </div>
+        <div class="robot">
+          <p>Kommen wir nun zu den Konsonanten. Achte auf die Merkmale!</p>
+        </div>
+      </main>
+    </div>
+
+    <div class="page9 mainPage" id="page9">
+      <div class="header">
+        <div class="three">
+          <img src="/assets/img/favicon.ico" alt="" />
+        </div>
+        <div class="three">
+          <button onclick="turnHome()">Aussprache</button>
+        </div>
+        <div class="three">
+          <button onclick="turn10()">-></button>
+        </div>
+      </div>
+
+      <main>
+        <div class="lr">
+          <div class="german part">
+            <img src="/assets/img/german/9.png" alt="" />
+          </div>
+          <div class="french part">
+            <img src="/assets/img/french/9.png" alt="" />
+          </div>
+        </div>
+        <div class="robot">
+          <p>Kommen wir nun zu den Konsonanten. Achte auf die Merkmale!</p>
+        </div>
+      </main>
+    </div>
+
+    <div class="page10 mainPage" id="page10">
+      <div class="header">
+        <div class="three">
+          <img src="/assets/img/favicon.ico" alt="" />
+        </div>
+        <div class="three">
+          <button onclick="turnHome()">Aussprache</button>
+        </div>
+        <div class="three">
+          <button onclick="turn11()">-></button>
+        </div>
+      </div>
+
+      <main>
+        <div class="lr">
+          <div class="german part">
+            <img src="/assets/img/german/10.png" alt="" />
+          </div>
+          <div class="french part">
+            <img src="/assets/img/french/10.png" alt="" />
+          </div>
+        </div>
+        <div class="robot">
+          <p>Kommen wir nun zu den Nasalvokalen. Achte auf deine Nase!</p>
+        </div>
+      </main>
+    </div>
+
+    <div class="page11 mainPage" id="page11">
+      <div class="header">
+        <div class="three">
+          <img src="/assets/img/favicon.ico" alt="" />
+        </div>
+        <div class="three">
+          <button onclick="turnHome()">Aussprache</button>
+        </div>
+        <div class="three">
+          <button onclick="turn12()">-></button>
+        </div>
+      </div>
+
+      <main>
+        <div class="lr">
+          <div class="german part">
+            <img src="/assets/img/german/11.png" alt="" />
+          </div>
+          <div class="french part">
+            <img src="/assets/img/french/11.png" alt="" />
+          </div>
+        </div>
+        <div class="robot">
+          <p>Finale! Der Zungenbrecher. Schaffst du das?</p>
+        </div>
+      </main>
+    </div>
+
+    <div class="page12 mainPage" id="page12">
+      <div class="end">
+        <span>Danke, dass du mitgemacht hast!</span>
+        <div>
+          Programmierung: Bennet Zeizinger
+          <br />
+          Stimme: Yuki Christ
+          <br />
+          Stimme: Niklas Pesch
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
     <script src="/script.js"></script>
   </body>
 </html>

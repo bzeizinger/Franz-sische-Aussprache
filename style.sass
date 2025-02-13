@@ -69,7 +69,7 @@ a
         margin-top: 50px
         border-radius: 25px
 
-.page1 .page2
+.page1 .page2 .page3 .page4 .page5 .page6 .page7 .page8 .page9 .page10 .page11 .page12
     display: none
 
 .mainPage
@@ -112,7 +112,6 @@ main
     user-select: none
 
     .lr
-        // Adjust the height to fill main minus the robot section (150px)
         height: calc(100% - 150px)
         display: flex
         justify-content: center
@@ -154,7 +153,9 @@ main
         max-width: 50%
 
         img
-            width: calc(100% - 25px)
+            // width: calc(100% - 25px)
+            max-width: calc(100% - 25px)
+            max-height: calc(100% - 25px)
             border: none
 
     .robot
@@ -169,6 +170,26 @@ main
         font-size: 37.5px
         border-top: 5px solid $bg_dark
 
-        // Remove extra whitespace from the paragraph inside robot
         p
             margin: 0
+
+.end
+    height: 100vh
+    width: 100vw
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    font-size: 100px
+    text-align: center
+
+    div
+        font-size: 50px
+        padding: 25px
+
+.can
+    height: 100vh
+    width: 100wx
+    position: fixed
+    pointer-events: none
+    z-index: 1000
