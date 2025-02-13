@@ -32,6 +32,7 @@ const german10 = new Audio("/assets/audio/german/10.mp3");
 const german11 = new Audio("/assets/audio/german/11.mp3");
 
 const end = new Audio("/assets/audio/end.mp3");
+const confetti = new Audio("/assets/audio/confetti.mp3");
 const silence = new Audio("/assets/audio/nothing.mp3");
 
 const page0 = document.getElementById("page0");
@@ -93,6 +94,7 @@ function turnHome() {
   page9.style.display = "none";
   page10.style.display = "none";
   page11.style.display = "none";
+  page12.style.display = "none";
 }
 
 function turn2() {
@@ -190,10 +192,15 @@ function turn11() {
 function turn12() {
   page11.style.display = "none";
   page12.style.display = "flex";
+  confetti.play();
   jsConfetti.addConfetti({
     emojis: ["🇫🇷", "🥖", "🇫🇷"],
     emojiSize: 100,
     confettiNumber: 100,
     confettiRadius: 10,
   });
+
+  setTimeout(() => {
+    turnHome();
+  }, 10000);
 }
