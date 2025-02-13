@@ -192,13 +192,13 @@ function turn11() {
 function turn12() {
   page11.style.display = "none";
   page12.style.display = "flex";
-  confetti.play();
   jsConfetti.addConfetti({
     emojis: ["🇫🇷", "🥖", "🇫🇷"],
     emojiSize: 100,
     confettiNumber: 100,
-    confettiRadius: 10,
+    confettiRadius: 5,
   });
+  confetti.play();
 
   setTimeout(() => {
     turnHome();
