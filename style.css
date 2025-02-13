@@ -15,9 +15,10 @@ body {
   font-size: 25px;
   overflow-x: hidden;
   overflow-y: hidden;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+}
+
+button {
+  cursor: pointer !important;
 }
 
 a {
@@ -81,6 +82,7 @@ a {
   align-items: center;
   flex-direction: row;
   height: 100px;
+  font-size: 50px;
   border-bottom: 5px solid #101010;
 }
 .header .three {
@@ -88,7 +90,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 75px;
+  font-size: 50px;
 }
 .header .three img {
   height: 75px;
@@ -107,9 +109,12 @@ main {
   align-items: center;
   flex-direction: column;
   height: calc(100vh - 100px);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 main .lr {
-  height: calc(100% - 200px);
+  height: calc(100% - 150px);
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -149,8 +154,13 @@ main .part {
   word-wrap: break-word;
   max-width: 50%;
 }
+main .part img {
+  width: calc(100% - 25px);
+  border: none;
+}
 main .robot {
-  height: 200px;
+  height: 150px;
+  padding: 0;
   background-color: #5050ff;
   width: 100%;
   display: flex;
@@ -159,4 +169,7 @@ main .robot {
   text-align: center;
   font-size: 37.5px;
   border-top: 5px solid #101010;
+}
+main .robot p {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */

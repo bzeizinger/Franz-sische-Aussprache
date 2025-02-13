@@ -22,7 +22,9 @@ body
     font-size: 25px
     overflow-x: hidden
     overflow-y: hidden
-    user-select: none
+
+button
+    cursor: pointer !important
 
 a
     color: $main
@@ -81,6 +83,7 @@ a
     align-items: center
     flex-direction: row
     height: 100px
+    font-size: 50px
     border-bottom: 5px solid $bg_dark
 
     & .three
@@ -88,7 +91,7 @@ a
         display: flex
         justify-content: center
         align-items: center
-        font-size: 75px
+        font-size: 50px
 
     & .three img
         height: 75px
@@ -104,12 +107,13 @@ main
     display: flex
     justify-content: center
     align-items: center
-    // Changed from invalid declaration to valid one:
     flex-direction: column
     height: calc(100vh - 100px)
+    user-select: none
 
     .lr
-        height: calc(100% - 200px)
+        // Adjust the height to fill main minus the robot section (150px)
+        height: calc(100% - 150px)
         display: flex
         justify-content: center
         align-items: stretch
@@ -149,8 +153,13 @@ main
         word-wrap: break-word
         max-width: 50%
 
+        img
+            width: calc(100% - 25px)
+            border: none
+
     .robot
-        height: 200px
+        height: 150px
+        padding: 0
         background-color: $blui
         width: 100%
         display: flex
@@ -159,3 +168,7 @@ main
         text-align: center
         font-size: 37.5px
         border-top: 5px solid $bg_dark
+
+        // Remove extra whitespace from the paragraph inside robot
+        p
+            margin: 0
